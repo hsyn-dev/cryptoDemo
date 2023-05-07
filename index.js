@@ -15,13 +15,22 @@ const displayUser = async ()=>{
     const payload = await getData();
 
     let dataDisplay = payload.map((Object) =>{
-        const {name, symbol} = Object;
+
+        const {name, symbol ,current_price, image ,market_cap} = Object;
+        
+     
 
         
         return(
             `<div class='container'>
-            <h1>name : ${name}</h1>
-            <p> symbol  : ${symbol}</p>
+                <div class='coin-item'>
+                  <h1>  ${name}</h1>
+                  <p>  ${symbol}</p>
+                  <h1> price : ${current_price} usd </h1>
+                  <p class='market-cap'> market cap : ${market_cap}</p>
+                  <img src='${image}'></img>
+                </div>
+               
             </div>`
         )
     })
