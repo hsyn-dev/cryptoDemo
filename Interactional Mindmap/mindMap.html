@@ -1,0 +1,49 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <body>
+  <script src="https://unpkg.com/gojs@2.3.6/release/go.js"></script>
+  <div id="allSampleContent" class="p-4 w-full">
+  <script src="./mindMap.js"></script>
+
+<div id="sample">
+  <div id="myDiagramDiv" style="border: 1px solid black; width: 100%; height: 500px; position: relative;"><canvas tabindex="0" style="position: absolute; top: 0px; left: 0px; z-index: 2; user-select: none; touch-action: none; width: 1054px; height: 298px;" width="1317" height="372">This text is displayed if your browser does not support the Canvas HTML element.</canvas><div style="position: absolute; overflow: auto; width: 1054px; height: 298px; z-index: 1;"><div style="position: absolute; width: 1px; height: 1px;"></div></div></div>
+  
+  
+
+  <button id="SaveButton" onclick="save()">Save</button>
+  <button onclick="load()">Load</button>
+  <button onclick="layoutAll()">Layout</button>
+  Diagram Model saved in JSON format:
+  <br>
+  <textarea id="mySavedModel" style="width:100%;height:400px">{ "class": "go.TreeModel",
+  "nodeDataArray": [
+{"key":0, "text":"Demo Blockchain", "loc":"0 0"},
+{"key":1, "parent":0, "text":"Header", "brush":"skyblue", "dir":"right", "loc":"77 -22"},
+{"key":11, "parent":1, "text":"SignUp/SignIn", "brush":"skyblue", "dir":"right", "loc":"200 -48"},
+{"key":12, "parent":1, "text":"Logo", "brush":"skyblue", "dir":"right", "loc":"200 -22"},
+{"key":13, "parent":1, "text":"Page Navigation", "brush":"skyblue", "dir":"right", "loc":"200 4"},
+{"key":14, "parent":1, "text":"Search Crypto", "brush":"skyblue", "dir":"right", "loc":"200 4"},
+{"key":15, "parent":1, "text":"Contact Details", "brush":"skyblue", "dir":"right", "loc":"200 4"},
+{"key":16, "parent":1, "text":"Darkmode/Lightmode", "brush":"skyblue", "dir":"right", "loc":"200 -48"},
+{"key":2, "parent":0, "text":"Footer", "brush":"darkseagreen", "dir":"right", "loc":"77 43"},
+{"key":21, "parent":2, "text":"Social Media Icons", "brush":"darkseagreen", "dir":"right", "loc":"203 30"},
+{"key":211, "parent":21, "text":"Twitter", "brush":"darkseagreen", "dir":"right", "loc":"274 17"},
+{"key":212, "parent":21, "text":"WhatsApp", "brush":"darkseagreen", "dir":"right", "loc":"274 43"},
+{"key":213, "parent":21, "text":"LikedIn", "brush":"darkseagreen", "dir":"right", "loc":"274 43"},
+{"key":214, "parent":21, "text":"Instagram", "brush":"darkseagreen", "dir":"right", "loc":"274 43"},
+{"key":215, "parent":21, "text":"Youtube", "brush":"darkseagreen", "dir":"right", "loc":"274 43"},
+{"key":216, "parent":21, "text":"TikTok", "brush":"darkseagreen", "dir":"right", "loc":"274 43"},
+{"key":22, "parent":2, "text":"Footer Navigation", "brush":"darkseagreen", "dir":"right", "loc":"203 56"},
+{"key":23, "parent":2, "text":"Website Copyright", "brush":"darkseagreen", "dir":"right", "loc":"203 56"},
+{"key":3, "parent":0, "text":"HomePage Body", "brush":"palevioletred", "dir":"left", "loc":"-20 -31.75"},
+{"key":31, "parent":3, "text":"Coin Price Table", "brush":"palevioletred", "dir":"left", "loc":"-117 -64.25"},
+{"key":32, "parent":3, "text":"Our Website Poster", "brush":"palevioletred", "dir":"left", "loc":"-117 -25.25"},
+{"key":4, "parent":0, "text":"SubPages", "brush":"coral", "dir":"left", "loc":"-20 52.75"},
+{"key":41, "parent":4, "text":"News", "brush":"coral", "dir":"left", "loc":"-103 26.75"},
+{"key":42, "parent":4, "text":"Blogs", "brush":"coral", "dir":"left", "loc":"-103 52.75"}
+ ]
+}
+  </textarea>
+  </body>
+  </html>
